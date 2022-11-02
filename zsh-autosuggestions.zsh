@@ -147,6 +147,7 @@ _zsh_autosuggest_bind_widget() {
 	local prefix=$ZSH_AUTOSUGGEST_ORIGINAL_WIDGET_PREFIX
 
 	local -i bind_count
+	local IFS=" "
 
 	# Save a reference to the original widget
 	case $widgets[$widget] in
